@@ -37,5 +37,5 @@ class TEST(models.Model):
     "Generated Model"
     test = models.BigIntegerField()
     test1 = models.GenericIPAddressField(
-        protocol="both", unpack_ipv4=False, null=True, blank=True,
+        protocol="IPv4", unpack_ipv4=False, null=True, blank=True,
     )
