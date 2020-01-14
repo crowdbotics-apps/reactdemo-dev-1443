@@ -42,3 +42,8 @@ class TEST(models.Model):
     test1 = models.GenericIPAddressField(
         null=True, blank=True, protocol="IPv4", unpack_ipv4=False,
     )
+
+
+class Testw(models.Model):
+    "Generated Model"
+    test = models.GenericIPAddressField(protocol="IPv4", unpack_ipv4=False,)
