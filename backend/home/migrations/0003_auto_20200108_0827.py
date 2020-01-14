@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0002_test'),
+        ("home", "0002_test"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='test',
-            name='test1',
-            field=models.GenericIPAddressField(blank=True, null=True, protocol='IPv4'),
+            model_name="test",
+            name="test1",
+            field=models.GenericIPAddressField(blank=True, null=True, protocol="IPv4"),
         ),
     ]

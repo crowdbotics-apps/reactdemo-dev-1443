@@ -8,6 +8,9 @@ from django.db import models
 
 class CustomText(models.Model):
     title = models.CharField(max_length=150,)
+    test = models.GenericIPAddressField(
+        protocol="IPv4", unpack_ipv4=False, null=True, blank=True,
+    )
 
     def __str__(self):
         return self.title
@@ -37,5 +40,5 @@ class TEST(models.Model):
     "Generated Model"
     test = models.BigIntegerField()
     test1 = models.GenericIPAddressField(
-        protocol="IPv4", unpack_ipv4=False, null=True, blank=True,
+        null=True, blank=True, protocol="IPv4", unpack_ipv4=False,
     )
