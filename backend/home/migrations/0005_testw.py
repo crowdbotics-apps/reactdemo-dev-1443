@@ -6,15 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0004_customtext_test'),
+        ("home", "0004_customtext_test"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Testw',
+            name="Testw",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('test', models.GenericIPAddressField(protocol='IPv4')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("test", models.GenericIPAddressField(protocol="IPv4")),
             ],
         ),
     ]
